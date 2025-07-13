@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiniela Liga MX</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; background: #f2f2f2; }
+    h1 { color: #d81f26; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    button { background: #d81f26; color: #fff; padding: 10px 20px; border: none; cursor: pointer; }
+    button:hover { background: #a8131b; }
+  </style>
+</head>
+<body>
+  <h1>QUINIELA LIGA MX - JORNADA 5</h1>
+  <p><strong>¡Participa por solo $10!</strong></p>
+  <ul>
+    <li>1er lugar: Más aciertos</li>
+    <li>2do lugar: Segundo mejor puntaje</li>
+    <li>3er lugar: Quiniela sin ningún acierto</li>
+    <li>Límite: 3 horas antes del primer partido</li>
+  </ul>
+
+  <h2>Partidos de esta jornada:</h2>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <table>
+      <tr>
+        <th>Partido</th>
+        <th>Tu pronóstico</th>
+      </tr>
+      <tr>
+        <td>América vs Chivas</td>
+        <td>
+          <label><input type="radio" name="ame_chi" value="Local"> Local</label>
+          <label><input type="radio" name="ame_chi" value="Empate"> Empate</label>
+          <label><input type="radio" name="ame_chi" value="Visita"> Visita</label>
+        </td>
+      </tr>
+      <tr>
+        <td>Tigres vs Pumas</td>
+        <td>
+          <label><input type="radio" name="tig_pum" value="Local"> Local</label>
+          <label><input type="radio" name="tig_pum" value="Empate"> Empate</label>
+          <label><input type="radio" name="tig_pum" value="Visita"> Visita</label>
+        </td>
+      </tr>
+      <!-- Más partidos aquí -->
+    </table>
+
+    <p><strong>Nombre completo:</strong> <input type="text" name="nombre" /></p>
+    <p><strong>Correo electrónico:</strong> <input type="email" name="correo" /></p>
+    <button type="submit">Enviar quiniela</button>
+  </form>
+</body>
+</html>
